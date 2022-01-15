@@ -1,7 +1,11 @@
+<div class="container" class="alert alert-primary" role="alert">
 <h1> Task </h1>
-<h2><%= @task.title %></h2>
+
+<h2 class="text-muted"><%= @task.title %></h2>
 <p><%= @task.details %></p>
 <p><%= @task.completed %></p>
-
+</div>
+<div class="container">
 <%= link_to "Back to list", tasks_path %>
 <%= link_to "Edit this task", edit_path %>
+</div>
